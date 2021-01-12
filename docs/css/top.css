@@ -9,6 +9,7 @@
 	}
 	.hover-red:hover {
 		color: #ff0000;
+		cursor : pointer;
 	}
 	table {
 		
