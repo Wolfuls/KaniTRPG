@@ -1,21 +1,28 @@
   #menu{
-	width: 100%;
+	position:relative;
 	height: 230px;
-	text-align: center;
+	width: 100%;
 	}
   #main{
+	top: 230px;
 	width: 100%;
+	}
+	.hover-red:hover {
+		color: #ff0000;
 	}
   iframe {
 	border: none;
 	height: 100%;
 	width: 100%;
-	}
-  iframe {
-	border: none;
-	height: 100%;
-	width: 100%;
+	position:relative;
+	top:0px;
+	left:0px;
 	}
 	table {
-	border-spacing: 6px;
+		
 	}
+	summary {
+		color: #0000ff;
+		list-style:none;
+	}
+	
