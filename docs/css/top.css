@@ -7,14 +7,14 @@
 	top: 230px;
 	width: 100%;
 	}
-	.hover-red:hover {
+.hover-red:hover {
 		color: #ff0000;
 		cursor : pointer;
 	}
-	table {
+iframe {
 		
 	}
-	summary {
+summary {
 		color: #0000ff;
 		list-style:none;
 	}
