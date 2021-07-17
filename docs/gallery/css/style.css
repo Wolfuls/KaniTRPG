@@ -1,0 +1,78 @@
+	body {
+		font-family:'ÉÅÉCÉäÉI', 'Meiryo', sans-serif;
+		margin:0;
+		padding:0;
+		color:#ffffff;
+		background-size: cover;
+    animation: fadeIn 1s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1s ease 0s 1 normal;
+	}
+	
+	h1 {
+	background-repeat: no-repeat;
+		background-size: 5em;
+		background-position: right;
+		background-color: #000000;
+		padding: 0.5em;
+		border: 0.1em solid #ffffff;
+		color: #ffffff;
+	}
+	h2 {
+	background-repeat: no-repeat;
+		background-image:url(../image/symbol03.png);
+		background-size: 4em;
+		background-position: right;
+		background-color: #000000;
+		padding: 0.5em;
+		border: 0.1em solid #ffffff;
+		color: #ffffff;
+	}
+	h3 {
+	background-repeat: no-repeat;
+		background-image:url(../image/symbol03.png);
+		background-size: 3em;
+		background-position: right;
+		background-color: #000000;
+		padding: 0.5em;
+		border: 0.1em solid #ffffff;
+		color: #ffffff;
+	}
+	summary::-webkit-details-marker {
+		color: transparent;
+		background: url(../image/icon.png) no-repeat center;
+	}
+	summary {
+		list-style-image: url(../image/icon.png);
+	}
+	
+	a:before {
+		display:inline;
+	}
+	a:link {
+		color:a080ff;
+		display:inline;
+	}
+	a:visited {
+		color:a080ff;
+	}
+	.bottun-hover:hover{
+		background: linear-gradient(45deg, rgba(128,255,255,0),rgba(128,255,255,0.5));
+		color:00ff00;
+	}
+	ul {
+		margin:0;
+	}
+	ol {
+		margin:0;
+	}
+	
+
+	@keyframes fadeIn {
+	    0% {opacity: 0}
+	    100% {opacity: 1}
+	}
+
+	@-webkit-keyframes fadeIn {
+	    0% {opacity: 0}
+	    100% {opacity: 1}
+	}
