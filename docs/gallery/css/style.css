@@ -150,7 +150,7 @@
 
 
 	
-@media screen and (min-width: 481px) { /*ウィンドウ幅が481px以上の場合に適用*/
+@media screen and  (orientation: landscape) { /*ウィンドウ幅が481px以上の場合に適用*/
 
 	body {
 		background-size: 100% auto;
@@ -163,7 +163,7 @@
 }
 
 
-@media screen and (max-width: 480px) { /*ウィンドウ幅が最大480pxまでの場合に適用*/
+@media screen and (orientation: portrait) { /*ウィンドウ幅が最大480pxまでの場合に適用*/
 
 	body {
 		background-size:auto 100%;
