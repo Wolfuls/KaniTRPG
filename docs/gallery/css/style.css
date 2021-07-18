@@ -99,25 +99,30 @@
 	    top: 0;
 	    right: 0;
 	    z-index: 80;
-	    background-color: #3584bb;
+	    background-color: #212121;
 	}
-	.menu-content ul {
-	    padding: 70px 10px 0;
+	
+
+
+	.menu-btn span:before {
+	    bottom: 16px;
 	}
-	.menu-content ul li {
-	    border-bottom: solid 1px #ffffff;
-	    list-style: none;
+	.menu-btn span:after {
+	    top: 16px;
 	}
-	.menu-content ul li a {
-	    display: block;
-	    width: 100%;
-	    font-size: 15px;
-	    box-sizing: border-box;
-	    color:#ffffff;
-	    text-decoration: none;
-	    padding: 9px 15px 10px 0;
-	    position: relative;
+	#menu-btn-check:checked ~ .menu-btn span {
+	    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
 	}
+	#menu-btn-check:checked ~ .menu-btn span::before {
+	    bottom: 0;
+	    transform: rotate(45deg);
+	}
+	#menu-btn-check:checked ~ .menu-btn span::after {
+	    top: 0;
+	    transform: rotate(-45deg);
+	}
+
+
 	.menu-content ul li a::before {
 	    content: "";
 	    width: 7px;
@@ -139,12 +144,27 @@
 	    background-color: rgba(0,0,0,0.5);
 	    transition: all 0.5s;/*アニメーション設定*/
 	}
-	
+	.menu-content ul li a {
+	    display: block;
+	    width: 100%;
+	    font-size: 15px;
+	    box-sizing: border-box;
+	    color:#ffffff;
+	    text-decoration: none;
+	    padding: 9px 15px 10px 0;
+	    position: relative;
+	}
+
+	.menu-content ul {
+	    padding: 70px 10px 0;
+	}
+	.menu-content ul li {
+	    border-bottom: solid 1px #ffffff;
+	    list-style: none;
+	}
 	#menu-btn-check:checked ~ .menu-content {
     	right: 0;/*メニューを画面内へ*/
 	}
-
-
 
 
 
@@ -190,13 +210,14 @@
 	}
 	.winb {
 		width:100%;
-		height:100vh;
+		height:90vh;
 	}
 	.winc {
 		width:750px;
-		height:100%x;
+		height:90vh;
 	}
 	
+
 	.menu-btn {
 	    position: fixed;
 	    bottom: 10px;
@@ -209,6 +230,7 @@
 	    z-index: 90;
 	    background-color: #212121;
 	}
+
 	.menu-btn span,
 	.menu-btn span:before,
 	.menu-btn span:after {
@@ -220,23 +242,5 @@
 	    background-color: #ffffff;
 	    position: absolute;
 	}
-	.menu-btn span:before {
-	    bottom: 16px;
-	}
-	.menu-btn span:after {
-	    top: 16px;
-	}
-	#menu-btn-check:checked ~ .menu-btn span {
-	    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
-	}
-	#menu-btn-check:checked ~ .menu-btn span::before {
-	    bottom: 0;
-	    transform: rotate(45deg);
-	}
-	#menu-btn-check:checked ~ .menu-btn span::after {
-	    top: 0;
-	    transform: rotate(-45deg);
-	}
-
 
 }
