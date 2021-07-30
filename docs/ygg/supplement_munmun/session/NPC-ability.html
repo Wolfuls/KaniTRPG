@@ -53,7 +53,7 @@
 			因子覚醒
 		</b></td>
 		<td valign="middle" align="center">
-			<font color="#FF8040"><b>ボス特性０ｐ</b></font>
+			<b>ボス特性１ｐ</b>
 		</td>
 		<td bgcolor="#4b4b4b">
 			<p><font color="#FF4080">
@@ -158,11 +158,25 @@
 		<p>
 			ラウンド開始時に宣言することで、<br>
 			<font color="ff8040">そのラウンド中のみ任意の【ＳＰＥ】または【カルマ】を１つ、追加で取得する。</font><br>
-			<font color="8080ff">ただし、ＳＰＥ【防衛本能】、カルマ【勇猛】は対象外とする。</font>
+			<font color="8080ff">ただし、ＳＰＥ【防衛本能】、カルマ【勇猛】【抗体】は対象外とする。</font>
 		</p>
 		<p>
 			代償として、<font color="ff0000">使用ラウンド中ＡＥ【コンセントレイション】【ブースト】を一切使用できない。</font><br>
 			また、【闘志】【パージ】等ラウンドを跨ぐ効果についてもそのラウンド限りの効果とする。
+		</p>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#4b4b4b" valign="middle">
+	<p align="center"><b>異常耐性（Ｌｖ０）</b></p></td>
+	<td valign="middle" align="center"><b>ＮＰＣ特性２ｐ</b></td>
+	<td bgcolor="#4b4b4b">
+		<p>
+			自身が解除側の場合、解除判定に【この特性のレベル×２Ｄ６】のボーナス。<br>
+			<font color="#FF8040">解除判定に失敗する度にレベルが１上がる。</font>
+		</p>
+		<p>
+			<font color="8080FF">ボスの場合は特性ｐｔを消費せず取得可。</font>
 		</p>
 	</td>
 </tr>
@@ -182,29 +196,22 @@
 </tr>
 <tr>
 	<td bgcolor="#4b4b4b" valign="middle">
-	<p align="center"><b>異常耐性（Ｌｖ１）</b></p></td>
-	<td valign="middle" align="center"><b>ボス特性１ｐ</b></td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			自身が解除側の解除判定に<font color="#FF8040">【この特性のレベル×２Ｄ６】のボーナス。</font><br>
-			起動する度にレベルが１上がる。
-		</p>
-</td></tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle">
 	<p align="center"><b>瞬間免疫</b></p></td>
 	<td valign="middle" align="center"><b>ボス特性１ｐ</b></td>
 	<td bgcolor="#4b4b4b">
 		<p>
-			<font color="#FF8040">任意継続効果を付与された場合、即座に解除判定を行う</font>ことができる。<br>
-			この判定結果に応じて、状態異常の継続時間を以下に変更する。<br>
-			●解除成功～倍差成功：その場で状態異常解除。<br>
-			　<font color="8080ff">目標操作の場合は以下の「解除失敗」の効果を適用する</font><br>
-			●解除失敗：効果発動タイミングかエンドフェイズ発生まで継続<br>
-			●倍差失敗：エンドフェイズ発生まで継続
+			状態異常（任意継続効果）を付与された際、即座に解除判定を行うことができる。<br>
+			この判定結果に応じて、状態異常の継続時間を短縮する。<br>
+			<br>
+			<table valign="top">
+			<tr valign="top"><td><font color="ff8040">●解除成功～倍差成功</td><td><font color="ff8040">：その場で状態異常解除。</td></tr>
+			<tr><td><font color="ff8040">●解除失敗</td><td><font color="ff8040">：効果発動タイミングかエンドフェイズ発生まで継続。</td></tr>
+			<tr><td><font color="ff8040">●倍差失敗</td><td><font color="ff8040">：エンドフェイズ発生まで継続</td></tr>
+			</table>
 		</p>
 		<p>
-			【瞬間免疫】を保有するユニットは、この特性の効果でしか解除側解除判定を行えない。
+			<font color="ff0000">【瞬間免疫】を保有するユニットは、この特性の効果でしか解除側解除判定を行えない。</font><br>
+			また、【目標操作】など解除判定が存在しないものについては「解除失敗」の項を適用する。
 		</p>
 	</td>
 </tr>
