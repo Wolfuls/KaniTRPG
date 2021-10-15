@@ -1,78 +1,81 @@
 <html>
 <head>
-<title>�ʏ�T�����[��</title>
+<title>探索ルール</title>
 </head>
+<META CHARSET="UTF-8">
 <body background="image/bg.png" alink="#1dedce" link="#2eb915" bgcolor="#2c0707" text="#ffffff" vLink="#b64ef3" style="margin:50px;">
 
 <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #FFFFFF; background-color: #000000;">
 
-<h1>���@�T�����[��</h1>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #FFFFFF; background-color: #000000;">
+
+<h1>▼　時刻</h1>
 <hr>
 <p>
-	�@<font color="#FF8040">���̃Z�b�V�����ɂ�����P�V�[���́u�����v�u�����v�u�[���v�u�钆�v�̂S�^�[���ɕ�������Ă���B<br>
-	�@�V�V�[���o�ߎ��_�ő��w�c�������c���Ă���ꍇ�̓V�i���I�������s�Ƃ��Ă��̏�ŏI���������s���B</font>
+	　<font color="#FF8040">このセッションにおける１シーンは「早朝」「日中」「夕方」「夜中」の４ターンに分割されている。<br>
+	　７シーン経過時点で他陣営が生き残っている場合はシナリオ強制失敗としてその場で終了処理を行う。</font>
 </p>
 <p>
-	�@�e�^�[����<br>
-	�@�u�@���C���X�e�b�v�F�e�w�c�̍s���v<br>
-	�@���u�A�v���C�X�e�b�v�F�s�����ʂ𓥂܂����q�o���v<br>
-	�@���u�B���C�h�X�e�b�v�F�P���Ώی���v�̂R�X�e�b�v�Ői�s����B
+	　各ターンは<br>
+	　「①メインステップ：各陣営の行動」<br>
+	　→「②プレイステップ：行動結果を踏まえたＲＰ等」<br>
+	　→「③レイドステップ：襲撃対象決定」の３ステップで進行する。
 </p>
 </div>
 <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #FFFFFF; background-color: #000000;">
 
-<h2>���@���C���X�e�b�v</h2>
+<h2>▼　メインステップ</h2>
 <hr>
 <p>
-	�@���̃^�[�����̎傽��s����錾����B<br>
-	�@�}�X�^�[�ƃT�[���@���g�ł��ꂼ��A�ȉ��̍s������P����I������B<br>
-	�@�Ȃ��A���Ƃ����G���A�ł����Ă����w�c�̊����͊m�F�ł��Ȃ��̂Œ��ӁB
+	　そのターン中の主たる行動を宣言する。<br>
+	　マスターとサーヴァントでそれぞれ、以下の行動から１つずつを選択する。<br>
+	　なお、たとえ同エリアであっても他陣営の活動は確認できないので注意。
 </p>
 <table cellspacing="0" cellpadding="10" bgcolor="#171717" border="1">
-<tr><td align="center"colspan="2" >�s���ꗗ�i�ォ�牺�֏������s���j</td></tr>
+<tr><td align="center"colspan="2" >行動一覧（上から下へ処理を行う）</td></tr>
 <tr>
 	<td align="center">
-		�x�e
+		休憩
 	</td>
 	<td align="left">
-		<font color="ff8040">�g�o��o�o��\���������ꂼ��P���񕜂���B</font><br>
-		�O���E���h�ɋx�e���s���Ă����ꍇ�A����Ɂu�����x�e�v�������s���B
+		<font color="ff8040">ＨＰ･ＰＰ･暴走率をそれぞれ１ｄ回復する。</font><br>
+		前ラウンドに休憩を行っていた場合、代わりに「睡眠休憩」処理を行う。
 	</td>
 </tr>
 <tr>
 	<td align="center">
-		����
+		潜伏
 	</td>
 	<td align="left">
-		���^�[�����A<font color="ff8040">���w�c�̎p�𑼐w�c����B���B</font>�v���C�X�e�b�v�ł̃R���^�N�g�Ώۂ�����O���B<br>
-		���L����u���ӌx���v�ɂ���Ĕ������ꂽ�ꍇ�A���̐w�c�ɑ΂��Ă͌��ʂ��Ȃ��Ȃ�B
+		同ターン中、<font color="ff8040">自陣営の姿を他陣営から隠す。</font>プレイステップでのコンタクト対象からも外れる。<br>
+		下記する「周辺警戒」によって発見された場合、その陣営に対しては効果がなくなる。
 	</td>
 </tr>
 <tr>
 	<td align="center">
-		���ӌx��
+		周辺警戒
 	</td>
 	<td align="left">
-		���^�[�����A<font color="ff8040">���w�c�ɑ΂���s�ӑł��𖳌�������B</font><br>
-		�܂��A���G���A�Ɂu�����v�����w�c������ꍇ�͂�����Ŕj����B
+		同ターン中、<font color="ff8040">自陣営に対する不意打ちを無効化する。</font><br>
+		また、同エリアに「潜伏」した陣営がいる場合はそれを看破する。
 	</td>
 </tr>
 <tr>
 	<td align="center">
-		�ړ�
+		移動
 	</td>
 	<td align="left">
-		<font color="ff8040">�㉺���E�̂����ꂩ�̗אڂ����G���A�ֈړ�����B</font><br>
-		�N���[�`���[�����G���A�ɑ��݂���ꍇ�A���������Ă̈ړ����\�B
+		<font color="ff8040">上下左右のいずれかの隣接したエリアへ移動する。</font><br>
+		クリーチャーが同エリアに存在する場合、随伴させての移動も可能。
 	</td>
 </tr>
 <tr>
 	<td align="center">
-		���̑�
+		その他
 	</td>
 	<td align="left">
-		��Ăɂ���ē��e�����肷��B<br>
-		�N���[�`���[�n���E�g���b�v�ݒu�E�T���p�`�d�̎g�p�E�s�ה����ȂǁB
+		提案によって内容を決定する。<br>
+		クリーチャー創造・トラップ設置・探索用ＡＥの使用・行為発動など。
 	</td>
 </tr>
 </table>
@@ -80,25 +83,25 @@
 
 <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #FFFFFF; background-color: #000000;">
 
-<h2>���@�v���C�X�e�b�v</h2>
+<h2>▼　プレイステップ</h2>
 <hr>
 <p>
-	�@���C���X�e�b�v��A�K�v���Ɣ��f����Εʐw�c�ɃR���^�N�g����铙�̂q�o�����݂邱�Ƃ��ł���B<br>
-	�@���w�c�Ƃ̌���o�k���m�̍���c�͖ܘ_�A�C�ɂȂ�o�������������Ȃ炻�̃��A�N�V�����Ƃ��Ă�����Ƃ����q�o���s�����A<br>
-	�@���R�Ɏg���č\��Ȃ��B
+	　メインステップ後、必要だと判断すれば別陣営にコンタクトを取る等のＲＰを試みることができる。<br>
+	　他陣営との交渉やＰＬ同士の作戦会議は勿論、気になる出来事があったならそのリアクションとしてちょっとしたＲＰを行う等、<br>
+	　自由に使って構わない。
 </p>
 </div>
 
 <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #FFFFFF; background-color: #000000;">
 
-<h2>���@���C�h�X�e�b�v</h2>
+<h2>▼　レイドステップ</h2>
 <hr>
 <p>
-	�@�v���C�X�e�b�v��A�e�w�c�͓��w�c���P�����錠���𓾂�B<br>
-	�@���̍ہA�P���j�b�g�����s�ӑł���錾�\�B���̐w�c���u���ӌx���v��錾���Ă����ꍇ�A�s�ӑł��͖����ƂȂ�B
+	　プレイステップ後、各陣営は同陣営を襲撃する権利を得る。<br>
+	　この際、１ユニットだけ不意打ちを宣言可能。その陣営が「周辺警戒」を宣言していた場合、不意打ちは無効となる。
 </p>
 <p>
-	�@�����܂Ō����Ȃ̂ŁA�P�������Ƀ^�[�����I���鎖���\�B
+	　あくまで権利なので、襲撃せずにターンを終える事も可能。
 </p>
 </div>
 
