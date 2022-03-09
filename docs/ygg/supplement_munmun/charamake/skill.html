@@ -3,7 +3,7 @@
 <title>追加：能力</title>
 <META CHARSET="UTF-8">
 </head>
-<body background="../image/bg.png" alink="#1dedce" bgcolor="#906060" text="#ffffff" link="#ffff00" vlink="#40bbff" style="margin:50px;">
+<body background="../image/bg.png" alink="#1dedce" bgcolor="#906060" text="#ffffff" link="#ffff00" vlink="#40bbff" style="margin:50px; width:1440px;">
 
 
 	<ul>
@@ -1359,18 +1359,46 @@
 					<td bgcolor="#171717">
 						<p>
 							クリーチャーを創造する代わりに、<br>
-							<font color="ff8040">そのクリーチャーの応用技セットを自身の応用技セットに上書きする。</font><br>
-							また、<font color="ff8040">クリーチャーの創造タイプに応じて以下のボーナスを得る。</font>
+							<font color="ff8040">自身の応用技セットをそのクリーチャーの応用技セットで上書きする。</font><br>
+							また、<font color="ff8040">創造タイプに応じて以下のボーナスを得る。</font>
 						</p>
 						<p>
-							<font color="ff0000">▼セットリスト　（複数セットの選択は可能）</font><br>
-							●攻撃型 / 攻撃力＋防御力＋抵抗力に【 能力精度÷３ 】のボーナス<br>
-							　　　　　　　また、通常攻撃ダメージロールを【能力攻撃力】で行える。
-							●速度型 / 命中・回避判定に＋１ｄのボーナス<br>
-							　　　　　　　 さらに、自身の命中力・回避力・ＳＳの内、<br>
-							　　　　　　　 固定値が【創造ＰＰ】未満のものを【創造ＰＰ】まで引き上げ。<br>
-							●探索型 / 解除判定＋取得技能の判定を【 能力精度 】で行える。<br>
-							　　　　　　　また、自身の行動値が【創造ＰＰ】未満の場合、【創造ＰＰ】まで引き上げ。
+							<table valign="top">
+							<tr>
+								<td colspan="2">
+									<font color="ff0000">▼セットリスト</font>
+								</td>
+							</tr>
+							<tr valign="top">
+								<td>
+									●攻撃型 / 
+								</td>
+								<td>
+									ダメージロールと装甲値に【 能力精度÷３ 】のボーナス<br>
+									また、ダメージロールに【 能力攻撃力 】分のボーナス。
+								</td>
+							</tr>
+							<tr valign="top">
+								<td>
+									●速度型 / 
+								</td>
+								<td>
+									命中・回避判定に＋１ｄのボーナス<br>
+									また、命中回避判定の固定値を<br>
+								 	【創造ＰＰ】に置き換えることができる。
+								 </td>
+							</tr>
+							<tr valign="top">
+								<td>
+									●探索型 / 
+								</td>
+								<td>
+									解除判定＋取得技能の判定を【 能力精度 】で行える。<br>
+									また、自身のＩＮ値を<br>
+									【創造ＰＰ】に置き換えることができる。
+								</td>
+							</tr>
+							</table>
 						</p>
 					</td>
 				</tr>
@@ -1397,9 +1425,11 @@
 							<tr>
 								<td valign="top" bordercolor="#000000">
 									<ul>
-										<li>性質上、<font color="#FF8040">創造系との併用が必須。</font>
-										<li>自己を対象とした効果であり、他者に付与する事はできない。
-										<li>エンチャント創造に換装系を併用した場合、エンチャント対象は自身となる。<br>
+										<li><font color="#FF8040">創造系との併用が必須。</font>
+										<li>自己を対象とした効果であり、<br>
+											他者に付与する事はできない。
+										<li>エンチャント創造に換装系を併用した場合、<br>
+											エンチャント対象は自身となる。<br>
 										<font color="8080ff">（つまり通常のバフになる）</font>
 									</ul> 
 								</td>
