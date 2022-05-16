@@ -102,7 +102,7 @@
 	</td>
 </tr>
 <tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>リミットバースト</b></td>
+	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>リミットレンジ</b></td>
 	<td valign="middle" align="center">
 		<b>ＮＰＣ特性０ｐ</b>
 	</td>
@@ -117,39 +117,8 @@
 	<td valign="middle" align="center"><b>ＮＰＣ特性０ｐ</b></td>
 	<td bgcolor="#4b4b4b">
 		<p>
-			自爆系のダメージでＨＰが０にならず、必ず１残る。<br>
-			具体的には以下のダメージが対象。
-		</p>
-		<ul>
-			<li>発作
-			<li>自爆
-			<li>崩壊
-			<li>自身の暴発
-			<li>自壊
-			<li>各種反動ダメージ
-		</ul>
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>無限ＳＰＥ</b></td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性２ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			ＳＰＥの使用可能回数がエンドフェイズ毎に回復する。
-		</p>
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>無限カルマ</b></td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性２ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			カルマの使用可能回数がエンドフェイズ毎に回復する。
-		</p>
+			ＰＴの攻撃以外でＨＰが０にならず、必ず１残る。<br>
+			<font color="ff0000">ただし、この特性を発動した後は【疲労状態】となる。</font>
 	</td>
 </tr>
 <tr>
@@ -172,23 +141,6 @@
 	</td>
 </tr>
 <tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>ワイルドカード</b></td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性２ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			ラウンド開始時に宣言することで、<br>
-			<font color="ff8040">そのラウンド中のみ任意の【ＳＰＥ】または【カルマ】を１つ、追加で取得する。</font><br>
-			<font color="8080ff">ただし、ＳＰＥ【防衛本能】、カルマ【勇猛】【抗体】は対象外とする。</font>
-		</p>
-		<p>
-			代償として、<font color="ff0000">使用ラウンド中ＡＥ【コンセントレイション】【ブースト】を一切使用できない。</font><br>
-			また、【闘志】【パージ】等ラウンドを跨ぐ効果についてもそのラウンド限りの効果とする。
-		</p>
-	</td>
-</tr>
-<tr>
 	<td bgcolor="#4b4b4b" valign="middle">
 	<p align="center"><b>異常耐性（Ｌｖ０）</b></p></td>
 	<td valign="middle" align="center"><b>ＮＰＣ特性２ｐ</b></td>
@@ -199,6 +151,34 @@
 		</p>
 		<p>
 			<font color="8080FF">ボスの場合は特性ｐｔを消費せず取得可。</font>
+		</p>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>無限ＳＰＥ</b></td>
+	<td valign="middle" align="center">
+		<b>ＮＰＣ特性２ｐ</b>
+	</td>
+	<td bgcolor="#4b4b4b">
+		<p>
+			ＳＰＥの使用可能回数がエンドフェイズ毎に回復する。
+		</p>
+		<p>
+			代償として、<font color="ff0000">ＡＥ【コンセントレイション】【ブースト】を一切使用できない。</font>
+		</p>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>無限カルマ</b></td>
+	<td valign="middle" align="center">
+		<b>ＮＰＣ特性２ｐ</b>
+	</td>
+	<td bgcolor="#4b4b4b">
+		<p>
+			カルマの使用可能回数がエンドフェイズ毎に回復する。
+		</p>
+		<p>
+			代償として、<font color="ff0000">ＡＥ【コンセントレイション】【ブースト】を一切使用できない。</font>
 		</p>
 	</td>
 </tr>
@@ -227,9 +207,9 @@
 			<br>
 			<table valign="top">
 			<tr valign="top"><td><font color="ff8040">●解除成功～倍差成功</td><td><font color="ff8040">：その場で状態異常解除。</td></tr>
-			<tr><td><font color="ff8040">●解除失敗</td><td><font color="ff8040">：効果発動タイミングかエンドフェイズ発生まで継続。<br>
+			<tr valign="top"><td><font color="ff8040">●解除失敗</td><td><font color="ff8040">：効果発動タイミングかエンドフェイズ発生まで継続。<br>
 			継続系の場合、上記処理の代わりに継続回数が半分になる。</td></tr>
-			<tr><td><font color="ff8040">●倍差失敗</td><td><font color="ff8040">：エンドフェイズ発生まで継続。<br>
+			<tr valign="top"><td><font color="ff8040">●倍差失敗</td><td><font color="ff8040">：エンドフェイズ発生まで継続。<br>
 			継続系の場合、影響なし。</td></tr>
 			</table>
 		</p>
