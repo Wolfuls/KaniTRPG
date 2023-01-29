@@ -3,18 +3,28 @@
 }
 
 body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  margin: 10;
 }
 
 a {
   text-decoration: none;
-}
+}	
+	a:before {
+		display:inline;
+	}
+	a:link {
+		color:a080ff;
+		display:inline;
+	}
+	a:visited {
+		color:a080ff;
+	}
 
  /* 見出し用 */ 
 
-.index:hover{
+.bottun-hover:hover{
     color: ddffff;
+	background: linear-gradient(45deg, rgba(128,255,255,0),rgba(128,255,255,0.5));
     cursor: pointer;
 }
 
@@ -296,8 +306,5 @@ footer {
   border-radius: 5px;
   padding: 20px;
   text-align: center;
-}
-a {
-  color: #0bd;
 }
 
